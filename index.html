@@ -194,6 +194,20 @@
     <script src="js/scripts.js"></script>
     
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    <script>
+    const heading = document.getElementById('main-heading');
+
+    window.addEventListener('scroll', () => {
+        // You can adjust the scroll threshold here
+        if (window.scrollY > 100) {
+            heading.classList.add('fade-out');
+        } else {
+            heading.classList.remove('fade-out');
+        }
+    });
+</script>
+
 </body>
 
 </html>
